@@ -16,8 +16,10 @@ function blink() {
   pec++;
 }
 
-function init() {
+function start_effect() {
   timer = setInterval('blink()', 200); // define timer
 }
 
-document.addEventListener('DOMContentLoaded', init());
+function init() {
+  setTimeout('start_effect()', 1000); // wait a minute, and start blink effect
+}
