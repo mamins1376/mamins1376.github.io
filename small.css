@@ -1,0 +1,24 @@
+/* Classes */
+.site-title:hover {
+	letter-spacing: 0;
+}
+.site-title h1 {
+	padding: 8px 16px;
+}
+.spacer {
+	height: 54px;
+}
+.banner-list {
+	height: 300px;
+}
+.banner-list li {
+	padding: 12px 12px;
+	width: calc( 100% / 2 - 24px);
+	height: 120px;
+}
+.banner {
+	line-height: 100px;
+}
+.banner:hover, .banner-hover {
+	border-bottom-width: 8px;
+}

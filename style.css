@@ -1,0 +1,90 @@
+/* Fonts */
+@font-face {
+  font-family: "Iranian Sans";
+  src: url("irsans.ttf");
+}
+
+/* Elements */
+body, header, div, section, footer {
+	font-family: "Iranian Sans", "Droid Sans Arabic", "Helvetica", "sans-serif";
+	padding: 0;
+	margin: 0;
+	direction: rtl;
+	background-color: #ffcc80;
+}
+a, a:visited, a:hover {
+	color: inherit;
+	background-color: transparent;
+	text-decoration: inherit;
+}
+
+/* Classes */
+.site-header {
+	position: fixed;
+	width: 100%;
+	background-color: #fb8c00;
+	color: #fff;
+	box-shadow: 0px 6px 8px -6px #fb8c00;
+}
+.site-title {
+	text-align: center;
+	transition: 0.4s;
+	letter-spacing: 0;
+}
+.site-title:hover {
+	letter-spacing: 8px;
+}
+.site-title h1 {
+	margin: 0;
+	padding: 8px 16px;
+	font-size: 1.4em;
+	font-weight: 300;
+}
+.spacer {
+	height: 42px;
+}
+.site-content, .spacer {
+	background-color: #fff3e0;
+}
+.banner-list {
+	margin: 0;
+	padding: 0;
+	white-space:nowrap;
+	display: block;
+	height: 228px;
+}
+.banner-list li {
+	list-style-type: none;
+	text-align: center;
+	padding: 24px 12px;
+	width: calc( 100% / 4 - 84px / 3);
+	height: 180px;
+	float: right;
+}
+.banner, .banner:visited {
+	display: block;
+	font-size: 2em;
+	line-height: 160px;
+	padding: 10px;
+	border-radius: 16px;
+	transition: 1s;
+	border-bottom: 0px solid #ffb74d;
+	background-color: #ffcc80;
+	color: #fb8c00;
+}
+.banner:hover, .banner-hover {
+	padding-top: 0;
+	font-weight: 400;
+	transition: 0.2s;
+	border-bottom-width: 10px;
+	background-color: #ffe0b2;
+	color: #e65100;
+}
+.site-footer {
+	padding: 18px;
+	color: #fb8c00;
+}
+.site-footer a, .site-footer a:visited {
+	text-decoration: underline;
+	color: #ef6c00;
+}
