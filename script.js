@@ -19,3 +19,5 @@ function blink() {
 function init() {
   timer = setInterval('blink()', 200); // define timer
 }
+
+document.addEventListener('DOMContentLoaded', init());
