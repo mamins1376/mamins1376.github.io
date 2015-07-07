@@ -57,7 +57,7 @@ a, a:visited, a:hover {
 	list-style-type: none;
 	text-align: center;
 	padding: 24px 12px;
-	width: calc( 100% / 4 - 84px / 3);
+	width: calc(25% - 28px);
 	height: 180px;
 	float: right;
 }
