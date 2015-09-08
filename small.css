@@ -1,24 +1,26 @@
 /* Classes */
-.site-title:hover {
-	letter-spacing: 0;
+.site-header {
+    position: relative;
+	box-shadow: none;
 }
-.site-title h1 {
-	padding: 8px 16px;
+.site-header div {
+	display: block;
+    width: 100%;
 }
-.spacer {
-	height: 54px;
+.site-title, .button-list {
+    float: none;
 }
-.banner-list {
-	height: 300px;
+.site-title a h1 {
+	font-size: 1.2em;
 }
-.banner-list li {
-	padding: 12px 12px;
-	width: calc( 100% / 2 - 24px);
-	height: 120px;
+.button-list ul li {
+    float: none;
 }
-.banner {
-	line-height: 100px;
+
+.site-footer {
+    box-shadow: none;
 }
-.banner:hover, .banner-hover {
-	border-bottom-width: 8px;
+.site-footer .container {
+    padding: 4px;
+	font-size: 0.86em;
 }

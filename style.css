@@ -5,12 +5,16 @@
 }
 
 /* Elements */
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body, header, div, section, footer {
 	font-family: "Iranian Sans", "Droid Sans Arabic", "Helvetica", "sans-serif";
-	padding: 0;
-	margin: 0;
-	direction: rtl;
-	background-color: #ffcc80;
+	direction: ltr;
+	background-color: #fff;
+    color: #000;
 }
 a, a:visited, a:hover {
 	color: inherit;
@@ -20,71 +24,55 @@ a, a:visited, a:hover {
 
 /* Classes */
 .site-header {
-	position: fixed;
-	width: 100%;
-	background-color: #fb8c00;
-	color: #fff;
-	box-shadow: 0px 6px 8px -6px #fb8c00;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 3px #777;
+}
+.site-header div {
+	display: inline-block;
+    width: 50%;
 }
 .site-title {
+    float: left;
 	text-align: center;
-	transition: 0.4s;
-	letter-spacing: 0;
 }
-.site-title:hover {
-	letter-spacing: 8px;
-}
-.site-title h1 {
-	margin: 0;
-	padding: 8px 16px;
+.site-title a h1 {
 	font-size: 1.4em;
-	font-weight: 300;
+	font-weight: bold;
+	line-height: 60px;
+    text-shadow: 0 0 3px #AAA;
+	white-space: nowrap;
 }
-.spacer {
-	height: 42px;
+.button-list {
+    float: right;
 }
-.site-content, .spacer {
-	background-color: #fff3e0;
-}
-.banner-list {
-	margin: 0;
-	padding: 0;
-	white-space:nowrap;
-	display: block;
-	height: 228px;
-}
-.banner-list li {
+.button-list ul li {
+    float: left;
+	white-space: nowrap;
 	list-style-type: none;
+	display: inline-block;
+	width: 32%;
 	text-align: center;
-	padding: 24px 12px;
-	width: calc(25% - 28px);
-	height: 180px;
-	float: right;
 }
-.banner, .banner:visited {
-	display: block;
-	font-size: 2em;
-	line-height: 160px;
-	padding: 10px;
-	border-radius: 16px;
-	transition: 1s;
-	border-bottom: 0px solid #ffb74d;
-	background-color: #ffcc80;
-	color: #fb8c00;
-}
-.banner:hover, .banner-hover {
-	padding-top: 0;
-	font-weight: 400;
-	transition: 0.2s;
-	border-bottom-width: 10px;
-	background-color: #ffe0b2;
-	color: #e65100;
+.button, .button:visited {
+    padding: 8px 12px;
+    line-height: 60px;
+    box-shadow: 0 0 4px #777;
+    border-radius: 4px;
 }
 .site-footer {
-	padding: 18px;
-	color: #fb8c00;
+    position: absolute;
+	width: 100%;
+    z-index: 10;
+    bottom: 0;
+    box-shadow: 0 0 3px #777;
+}
+.site-footer .container {
+    padding: 12px;
 }
 .site-footer a, .site-footer a:visited {
 	text-decoration: underline;
-	color: #ef6c00;
+	color: #555;
 }

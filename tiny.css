@@ -1,0 +1,16 @@
+/* Classes */
+.site-title a h1 {
+	font-size: 1em;
+    line-height: 30px;
+}
+.button-list ul li {
+	max-width: 30%;
+}
+.button, .button:visited {
+    font-size: 0.9em;
+    padding: 3px;
+    line-height: 30px;
+}
+.site-footer .container {
+	font-size: 0.75em;
+}
