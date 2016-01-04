@@ -22,6 +22,5 @@ function insert_posts(doc) {
     post_link = post.getElementsByClassName('post-title')[0].children[0];
     container.appendChild(post_link);
   };
-  container.parentNode.style.display = 'block';
   container.parentNode.style.opacity = 1;
 };
