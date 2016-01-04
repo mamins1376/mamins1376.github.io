@@ -9,21 +9,31 @@
   <link type="text/css" rel="stylesheet" href="small.css" media="screen and (max-width: 600px)" />
   <link type="text/css" rel="stylesheet" href="tiny.css" media="screen and (max-width: 250px)" />
   <link rel="icon" type="image/png" href="weblog/favicon.png" />
+  <script src="postloader.js" type="text/javascript"></script>
+  <script type="text/javascript">
+function init_scripts() {
+  load_posts();
+};
+  </script>
 </head>
-<body>
+<body onload="init_scripts();">
   <header class="site-header">
     <div class="site-title">
       <a href="http://mamins1376.github.io/" ><h1>Mohammad Amin Sameti</h1></a>
     </div>
     <div class="button-list"><ul>
-      <li><a class="button" href="weblog" >Blog</a></li>
+      <li><a class="button" href="weblog/" >Blog</a></li>
       <li><a class="button" href="https://github.com/mamins1376?tab=repositories" >Projects</a></li>
       <li><a class="button" href="weblog/pages/drbrh" >Contact</a></li>
     </ul></div>
   </header>
   <div class="site-content">
-    <section id='introduction'>
-
+    <section id="weblog-posts">
+      <div class="title">.:Blog:.</div>
+      <div id="last-posts"></div>
+      <div class="see-all">
+        <a href="weblog/">See all...</a>
+      </div>
     </section>
   </div>
   <footer class="site-footer">

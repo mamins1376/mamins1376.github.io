@@ -17,6 +17,11 @@
     float: none;
 }
 
+section {
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
 .site-footer {
     box-shadow: none;
 }
