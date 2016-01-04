@@ -23,4 +23,5 @@ function insert_posts(doc) {
     container.appendChild(post_link);
   };
   container.parentNode.style.display = 'block';
+  container.parentNode.style.opacity = 1;
 };
