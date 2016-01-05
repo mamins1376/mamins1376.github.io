@@ -21,6 +21,12 @@ section {
   margin: 0 auto;
   border-radius: 8px;
 }
+.blog-link-container {
+  display: block;
+  width: 80%;
+  height: 56px;
+  margin: 8px auto;
+}
 
 .site-footer {
     box-shadow: none;

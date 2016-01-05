@@ -16,11 +16,26 @@ function load_posts() {
 
 function insert_posts(doc) {
   var posts = doc.getElementsByTagName('article');
-  var container = document.getElementById('last-posts');
   for (var i = 0; i < 5; i++) {
     post = (posts[i]);
     post_link = post.getElementsByClassName('post-title')[0].children[0];
-    container.appendChild(post_link);
+    append_post(post_link);
   };
-  container.parentNode.style.opacity = 1;
+  
+  var see_all = document.createElement('a');
+  see_all.href = 'weblog/';
+  see_all.title = 'See other posts';
+  see_all.text = '...';
+  append_post(see_all);
+
+  document.getElementById('last-posts').parentNode.style.opacity = 1;
+};
+
+function append_post(post_link) {
+  span = document.createElement('span');
+  span.innerHTML = post_link.text.toString();
+  post_link.text = '';
+  post_link.classList.add('blog-link-container');
+  post_link.appendChild(span)
+  document.getElementById('last-posts').appendChild(post_link);
 };
