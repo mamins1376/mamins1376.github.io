@@ -16,6 +16,7 @@ function load_posts() {
 
 function insert_posts(doc) {
   var posts = doc.getElementsByTagName('article');
+  if ( posts.length <= 0 ) return;
   for (var i = 0; i < 5; i++) {
     post = (posts[i]);
     post_link = post.getElementsByClassName('post-title')[0].children[0];

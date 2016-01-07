@@ -13,11 +13,11 @@ html, body {
   direction: ltr;
   height: 100%;
   width: 100%;
+  background-color: #fff;
+  color: #000;
 }
 body, header, div, section, footer {
   font-family: "Iranian Sans", "Droid Sans Arabic", "Helvetica", "sans-serif";
-  background-color: #fff;
-  color: #000;
 }
 section {
   max-width: 86%;
@@ -79,6 +79,7 @@ a, a:visited, a:hover {
 .site-header div {
 	display: inline-block;
     width: 50%;
+    background-color: #859900;
 }
 .site-title {
     float: left;
@@ -88,8 +89,16 @@ a, a:visited, a:hover {
 	font-size: 1.4em;
 	font-weight: bold;
 	line-height: 60px;
-    text-shadow: 0 0 3px #AAA;
 	white-space: nowrap;
+        transition: all 0.08s;
+}
+.turned-off {
+        color: rgba(192,192,192,0.6);
+    text-shadow: none;
+}
+.site-title:hover a h1, .turned-on {
+        color: white;
+    text-shadow: 0 0 3px #CCC
 }
 .button-list {
     float: right;
@@ -107,6 +116,14 @@ a, a:visited, a:hover {
     line-height: 60px;
     box-shadow: 0 0 4px #777;
     border-radius: 4px;
+    background-color: rgba(255,255, 255, 0.5);
+    color: rgba(0,0,0,0.5);
+    transition: all 0.2s;
+}
+.button:hover, .button:focus {
+    background-color: rgba(255,255, 255, 0.8);
+    color: black;
+    box-shadow: 0 0 7px #888;
 }
 .site-content {
   padding-top: 60px;
@@ -117,11 +134,13 @@ a, a:visited, a:hover {
     z-index: 10;
     bottom: 0;
     box-shadow: 0 0 3px #777;
+    background-color: #859900;
 }
 .site-footer .container {
     padding: 12px;
+    color: rgba(255,255,255, 0.75);
+    text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 .site-footer a, .site-footer a:visited {
-	text-decoration: underline;
-	color: #555;
+	color: #FFF;
 }
