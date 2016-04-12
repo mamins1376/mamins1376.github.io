@@ -10,7 +10,8 @@ function load_posts() {
       insert_posts(dom)
     };
   };
-  request.open('GET', 'http://mamins1376.github.io/weblog/', true);
+  request.open('GET', 'https://mamins1376.github.io/weblog/', true);
+  request.setRequestHeader('Origin', 'https://mamins1376.github.io');
   request.send(null);
 };
 
