@@ -11,7 +11,7 @@ function load_repos() {
     };
   };
   request.open('GET', 'https://github.com/mamins1376?tab=repositories', true);
-  request.setRequestHeader('Origin', window.location.href);
+  request.setRequestHeader('Origin', 'https://github.com/');
   request.send(null);
 };
 
