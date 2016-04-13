@@ -6,8 +6,8 @@
 
 /* Elements */
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 html, body {
   direction: ltr;
@@ -38,7 +38,7 @@ a, a:visited, a:hover {
   direction: rtl;
 }
 
-#weblog-posts .title {
+#weblog-posts .title, #repositories .title {
   text-align: center;
   letter-spacing: 16px;
   font-weight: bold;
@@ -72,77 +72,77 @@ a, a:visited, a:hover {
 
 /* Classes */
 .site-header {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    height: 60px;
-    box-shadow: 0 0 3px #3a9188;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 0 3px #3a9188;
 }
 .site-header div {
-	display: inline-block;
-    width: 50%;
-    background-color: #044a42;
+  display: inline-block;
+  width: 50%;
+  background-color: #044a42;
 }
 .site-title {
-    float: left;
-	text-align: center;
+  float: left;
+  text-align: center;
 }
 .site-title a h1 {
-	font-size: 1.4em;
-	font-weight: bold;
-	line-height: 60px;
-	white-space: nowrap;
-        transition: all 0.08s;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 60px;
+  white-space: nowrap;
+  transition: all 0.08s;
 }
 .turned-off {
-        color: rgba(192,192,192,0.6);
-    text-shadow: none;
+  color: rgba(192,192,192,0.6);
+  text-shadow: none;
 }
 .site-title:hover a h1, .turned-on {
-        color: white;
-    text-shadow: 0 0 3px #CCC
+  color: white;
+  text-shadow: 0 0 3px #CCC
 }
 .button-list {
-    float: right;
+  float: right;
 }
 .button-list ul li {
-    float: left;
-	white-space: nowrap;
-	list-style-type: none;
-	display: inline-block;
-	width: 32%;
-	text-align: center;
+  float: left;
+  white-space: nowrap;
+  list-style-type: none;
+  display: inline-block;
+  width: 32%;
+  text-align: center;
 }
 .button, .button:visited {
-    padding: 8px 12px;
-    line-height: 60px;
-    box-shadow: 0 0 4px #3a9188;
-    border-radius: 4px;
-    background-color: rgba(255,255, 255, 0.5);
-    color: #044a42;
-    transition: all 0.2s;
+  padding: 8px 12px;
+  line-height: 60px;
+  box-shadow: 0 0 4px #3a9188;
+  border-radius: 4px;
+  background-color: rgba(255,255, 255, 0.5);
+  color: #044a42;
+  transition: all 0.2s;
 }
 .button:hover, .button:focus {
-    background-color: rgba(255,255, 255, 0.8);
-    color: #062925;
-    box-shadow: 0 0 7px #3a9188;
+  background-color: rgba(255,255, 255, 0.8);
+  color: #062925;
+  box-shadow: 0 0 7px #3a9188;
 }
 .site-content {
   padding-top: 60px;
 }
 .site-footer {
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    bottom: 0;
-    box-shadow: 0 0 3px #3a9188;
-    background-color: #044a42;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  bottom: 0;
+  box-shadow: 0 0 3px #3a9188;
+  background-color: #044a42;
 }
 .site-footer .container {
-    padding: 12px;
-    color: rgba(255,255,255, 0.75);
-    text-shadow: 0 0 4px rgba(0,0,0,0.4);
+  padding: 12px;
+  color: rgba(255,255,255, 0.75);
+  text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 .site-footer a, .site-footer a:visited {
-	color: #FFF;
+  color: #FFF;
 }
