@@ -1,4 +1,4 @@
-function load_posts() {
+function load_repos() {
   var request = new XMLHttpRequest();
   request.onreadystatechange = function () {
     var DONE = this.DONE || 4;
