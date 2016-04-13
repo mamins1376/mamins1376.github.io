@@ -16,6 +16,8 @@ function turn_light_off(light_node) {
 };
 
 function random_delay() {
-  var min = 50, max = 1000;
+  var normal = 1000, radius = 700;
+
+  var min = normal - radius, max = normal + radius;
   return Math.random() * (max - min) + min;
 };
