@@ -1,37 +1,44 @@
 /* Classes */
+
 .site-header {
-    position: relative;
-	box-shadow: none;
-}
-.site-header div {
-	display: block;
-    width: 100%;
-}
-.site-title, .button-list {
-    float: none;
-}
-.site-title a h1 {
-	font-size: 1.2em;
-}
-.button-list ul li {
-    float: none;
+  height: unset;
 }
 
-section {
-  margin: 0 auto;
-  border-radius: 8px;
+.site-header div div {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
+
+.site-title a h1 {
+  font-size: 1.2em;
+}
+
+.button-list {
+  float: none;
+}
+
 .blog-link-container {
   display: block;
   width: 80%;
-  height: 56px;
+  height: unset;
   margin: 8px auto;
 }
 
-.site-footer {
-    box-shadow: none;
+.blog-link-container span {
+  white-space: unset;
+  padding: 20px;
 }
-.site-footer .container {
-    padding: 4px;
-	font-size: 0.86em;
+
+@media ( max-width: 530px ) {
+
+  .container {
+    padding-bottom: 84px;
+    min-height: calc(100% - 84px);
+  }
+
+  .site-footer {
+    height: 60px;
+  }
+
 }
