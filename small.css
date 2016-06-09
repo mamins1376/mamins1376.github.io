@@ -1,7 +1,7 @@
 /* Classes */
 
 .site-header {
-  height: unset;
+  height: 120px;
 }
 
 .site-header div div {
@@ -21,12 +21,12 @@
 .blog-link-container {
   display: block;
   width: 80%;
-  height: unset;
+  height: auto;
   margin: 8px auto;
 }
 
 .blog-link-container span {
-  white-space: unset;
+  white-space: normal;
   padding: 20px;
 }
 
