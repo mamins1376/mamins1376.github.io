@@ -51,7 +51,6 @@ export default {
 
     +breakpoint(m)
         margin: 4em auto 0 auto
-        max-width: 70%
 
 #index-nav
     margin-bottom: 3em

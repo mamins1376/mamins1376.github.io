@@ -1,0 +1,16 @@
+[
+    {
+        "name": "First Project",
+        "image": "first.png",
+        "content": "This was my first project."
+    },
+    {
+        "name": "Second Project",
+        "content": "This was my second project."
+    },
+    {
+        "name": "Third Project",
+        "image": "third.png",
+        "content": "This was my third project."
+    }
+]

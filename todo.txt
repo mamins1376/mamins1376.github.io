@@ -1,0 +1,2 @@
+- use pure css for vertical and horizontal centering img tag of each project
+    view. currently this is done by js (in src/components/Projects.vue)
