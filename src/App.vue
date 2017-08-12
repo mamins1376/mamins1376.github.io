@@ -1,22 +1,22 @@
 <template>
-  <body>
-    <router-view></router-view>
-  </body>
+    <body>
+        <router-view></router-view>
+    </body>
 </template>
 
 <script>
 export default {
-  name: 'app'
-}
+    name: 'app'
+};
 </script>
 
-<style>
-body {
-  font-family: 'DejaVu Sans', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+$base-font-family: 'Droid Sans'
+
+@import ~getbase/src/scss/base
+
+.button
+    border-color: black
+    color: black
+    background-color: white
 </style>
