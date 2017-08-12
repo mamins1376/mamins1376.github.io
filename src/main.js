@@ -1,6 +1,10 @@
+import jQuery from 'jquery';
 import Vue from 'vue';
-import App from './App';
-import router from './router';
+import App from '@/App';
+import router from '@/router';
+
+window.jQuery = jQuery;
+window.$ = jQuery;
 
 Vue.config.productionTip = false;
 

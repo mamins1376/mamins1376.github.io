@@ -1,42 +1,61 @@
 <template>
-    <div class="placeholder">
-        <h1>Mohammad Amin Sameti</h1>
-        <span>Python Developer, Web Developer and Rustacean</span>
-        <div class="row">
-            <div class="col-full col-3-m">
-                <router-link to="/blog" class="button">Blog</router-link>
+<div id="index">
+    <div class="container">
+        <div class="placeholder">
+            <div id="index-name" class="row-m">
+                <div class="col-4-m push-8-m text-center">
+                    <i class="fa fa-code fa-4x" aria-hidden="true"></i>
+                </div>
+                <div class="col-8-m pull-4-m">
+                    <h1>Mohammad Amin Sameti</h1>
+                    <span>Python Developer, Web Developer and Rustacean</span>
+                </div>
             </div>
-            <div class="col-full col-3-m">
-                <router-link to="/projects" class="button">Projects</router-link>
-            </div>
-            <div class="col-full col-3-m">
-                <router-link to="/technologies" class="button">Technologies</router-link>
-            </div>
-            <div class="col-full col-3-m">
-                <router-link to="/contact" class="button">Contact</router-link>
+            <div id="index-nav" class="row text-center">
+                <div class="col-6 col-3-m">
+                    <router-link to="/blog" class="button">Blog</router-link>
+                </div>
+                <div class="col-6 col-3-m">
+                    <tag-scroller selector="#projects" class="button">Projects</tag-scroller>
+                </div>
+                <div class="col-6 col-3-m">
+                    <tag-scroller selector="#technologies" class="button">Technologies</tag-scroller>
+                </div>
+                <div class="col-6 col-3-m">
+                    <tag-scroller selector="#contact" class="button">Contact</tag-scroller>
+                </div>
             </div>
         </div>
     </div>
+    <projects></projects>
+</div>
 </template>
 
 <script>
+import TagScroller from '@/components/TagScroller.vue';
+import Projects from '@/components/Projects.vue';
 export default {
-    name: 'index'
+    name: 'index',
+    components: {
+        TagScroller,
+        Projects
+    }
 };
 </script>
 
 <style lang="sass" scoped>
-@import ~getbase/src/scss/base/_variables
-@import ~getbase/src/scss/base/_mixins
+@import '~@/styles/vamix';
 
 .placeholder
-    margin: 3em auto 0 auto
+    margin-top: 1em
+
     +breakpoint(m)
+        margin: 4em auto 0 auto
         max-width: 70%
 
-    > div
-        margin-top: 2em
+#index-nav
+    margin-bottom: 3em
 
-h1
-    font-weight: normal
+    > div
+        margin-top: 1em
 </style>
