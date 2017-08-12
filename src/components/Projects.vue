@@ -4,17 +4,19 @@
         <div class="project row-m" v-for="project in projects">
             <template v-if="project.image">
                 <div class="push-8-m col-4-m text-center">
-                    <img class="block" :src="url + '/' + project.image" :alt="project.name"/>
+                    <img class="block" :src="url+'/'+project.image" :alt="project.name"/>
                 </div>
                 <div class="pull-4-m col-8-m">
                     <h3>{{ project.name }}</h3>
-                    <p>{{ project.content }}</p>
+                    <div>{{ project.content }}</div>
+                    <a v-if="project.url" :href="project.url" :alt="'See '+project.name">Take a look!</a>
                 </div>
             </template>
 
             <div v-else class="col-12-m">
                 <h3>{{ project.name }}</h3>
-                <p>{{ project.content }}</p>
+                <div>{{ project.content }}</div>
+                <a v-if="project.url" :href="project.url" :alt="'See '+project.name">Take a look!</a>
             </div>
         </div>
     </div>
@@ -51,7 +53,7 @@ h2
     margin-bottom: 0.6em
 
 .project
-    margin: 0 $grid-gutter
+    margin: 0 $grid-gutter 0.6em $grid-gutter
 
     img
         max-width: 100%

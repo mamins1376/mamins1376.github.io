@@ -1,11 +1,13 @@
 [
     {
         "name": "First Project",
+        "url": "http://example.com",
         "image": "first.png",
         "content": "This was my first project."
     },
     {
         "name": "Second Project",
+        "url": "http://example.com",
         "content": "This was my second project."
     },
     {
