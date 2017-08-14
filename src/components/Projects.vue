@@ -9,7 +9,7 @@
                 <div class="pull-4-m col-8-m">
                     <h3>{{ project.name }}</h3>
                     <div>{{ project.content }}</div>
-                    <a v-if="project.url" :href="project.url" :alt="'See '+project.name">Take a look!</a>
+                    <a v-if="project.url" :href="project.url" :alt="'See '+project.name">Take a look!</a><br/>
                     <a v-if="project.repo" :href="project.repo" :alt="'Code for '+project.name">Read the source!</a>
                 </div>
             </template>
@@ -17,7 +17,7 @@
             <div v-else class="col-12-m">
                 <h3>{{ project.name }}</h3>
                 <div>{{ project.content }}</div>
-                <a v-if="project.url" :href="project.url" :alt="'See '+project.name">Take a look!</a>
+                <a v-if="project.url" :href="project.url" :alt="'See '+project.name">Take a look!</a><br/>
                 <a v-if="project.repo" :href="project.repo" :alt="'Code for '+project.name">Read the source!</a>
             </div>
         </div>
