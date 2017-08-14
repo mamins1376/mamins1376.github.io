@@ -1,15 +1,30 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Index from '@/components/Index';
+import toTitleCase from 'title-case';
+
+import Home from '@/components/Home';
+import Blog from '@/components/Blog';
+import Projects from '@/components/Projects';
+import Technologies from '@/components/Technologies';
+import Contact from '@/components/Contact';
 
 Vue.use(Router);
 
+function generateSection(component, path = null) {
+    path = path || '/' + component.name;
+    return {
+        name: toTitleCase(component.name),
+        path,
+        component
+    };
+}
+
 export default new Router({
     routes: [
-        {
-            path: '/',
-            name: 'Index',
-            component: Index
-        }
+        generateSection(Home, '/'),
+        generateSection(Blog),
+        generateSection(Projects),
+        generateSection(Technologies),
+        generateSection(Contact)
     ]
 });

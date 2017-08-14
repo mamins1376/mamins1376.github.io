@@ -1,0 +1,13 @@
+.fade-, .fade-slide-
+    &enter, &leave
+        &-active
+            transition: all .5s
+
+    &enter, &leave-active
+        opacity: 0
+
+.fade-slide-
+    &enter
+        transform: translateY(.5em)
+    &leave-active
+        transform: translateY(-.5em)

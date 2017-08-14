@@ -71,6 +71,7 @@
     "shelljs": "^0.7.6",
     "sinon": "^2.1.0",
     "sinon-chai": "^2.8.0",
+    "title-case": "^2.1.1",
     "url-loader": "^0.5.8",
     "url-parse": "^1.1.9",
     "vue-loader": "^12.1.0",

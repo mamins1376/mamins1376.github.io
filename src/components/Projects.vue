@@ -32,13 +32,12 @@ const data = { projects, url };
 export default {
     name: 'projects',
     data: () => data,
-    mounted () {
+    mounted() {
         this.$nextTick(() => {
-            $('.project').each(function () {
+            $('.project').each(function() {
                 let project = $(this);
                 let height = project.height();
                 height = Math.floor(height + 0.999).toString() + 'px';
-                console.log(height);
                 project.find('img').attr('height', height);
             });
         });
@@ -49,11 +48,14 @@ export default {
 <style lang="sass" scoped>
 @import '~@/styles/vamix';
 
+#projects
+    margin-top: 1em
+
 h2
     margin-bottom: 0.6em
 
 .project
-    margin: 0 $grid-gutter 0.6em $grid-gutter
+    margin: 0 $grid-gutter 2em $grid-gutter
 
     img
         max-width: 100%

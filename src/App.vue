@@ -1,6 +1,12 @@
 <template>
     <body>
-        <router-view></router-view>
+        <div class="vcenter-wrapper">
+            <div>
+                <transition name="fade-slide" mode="out-in">
+                    <router-view></router-view>
+                </transition>
+            </div>
+        </div>
     </body>
 </template>
 
