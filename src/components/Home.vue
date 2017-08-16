@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <global-navigation></global-navigation>
         <div class="placeholder">
             <div id="index-name" class="row-m">
                 <div class="col-4-m push-8-m text-center">
@@ -35,14 +36,18 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+$dev-logo-height: 101px
+
 .dev-logo
-    font-size: 76px
-    line-height: 76px
+    font-size: $dev-logo-height
+    line-height: $dev-logo-height
     animation: blink 4s ease infinite
+    position: relative
+    top: 16px
 
     .lt, .gt
         position: relative
-        top: -6px
+        top: -10px
 
 @keyframes blink
     0%

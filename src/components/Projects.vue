@@ -1,5 +1,6 @@
 <template>
     <div id="projects" class="container">
+        <global-navigation></global-navigation>
         <h2>Projects</h2>
         <div class="project row-m" v-for="project in projects">
             <template v-if="project.image">
