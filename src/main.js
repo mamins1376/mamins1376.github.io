@@ -9,8 +9,11 @@ window.$ = jQuery;
 
 Vue.config.productionTip = false;
 
-// eslint-disable-next-line no-unused-vars
 let app = new Vue({
     router,
     render: h => h(App)
 }).$mount('body');
+
+if (process.env.NODE_ENV === 'development') {
+    window.app = app;
+}
