@@ -52,7 +52,7 @@ $dev-logo-height: 101px
 @keyframes blink
     0%
         opacity: .7
-    50%
+    75%
         opacity: .3
     100%
         opacity: .7
