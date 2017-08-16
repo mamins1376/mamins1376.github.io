@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Language-Agnostic Abilities",
+        "tips": [
+            "Writing clean, maintainable and modular codebase",
+            "Unit testing, Continuous Integration and Automated Building",
+            "Gaining experiance with new technologies, frameworks and libraries"
+        ]
+    },
+    {
+        "title": "Python",
+        "tips": [
+            "Highly experianced in Extension Development in pure C",
+            "Great at Backend Development and REST APIs",
+            "Familiar with Flask framework and related plugins",
+            "Experianced with ORM Concept and libraries like SQLAlchemy"
+        ]
+    },
+    {
+        "title": "Javascript",
+        "tips": [
+            "Fluent in ES6 standard and related APIs",
+            "Skilled at web application development and client-side rendering",
+            "Highly experianced with VueJS library and modern web component development",
+            "Experianced in server-side environments (like NodeJS)",
+            "Familiar with jQuery and jQuery plugin development"
+        ]
+    },
+    {
+        "title": "Unix & Linux Environments",
+        "tips": [
+            "Fluent in CLI environment",
+            "Experianced with Bash programming and shell scripting",
+            "Familiar with Git and Mercurial",
+            "Experianced in setting up a Linux environment from scratch",
+            "Experianced with embedded programming over platforms like Raspberry Pi"
+        ]
+    }
+]
