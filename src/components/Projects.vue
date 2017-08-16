@@ -32,6 +32,14 @@ import projects from '@/data/projects';
 const url = URL(location.toString()).origin;
 const data = { projects, url };
 
+function roundUp(n) {
+    let f = Math.floor(n);
+    if (n !== f) {
+        f++;
+    }
+    return f;
+}
+
 export default {
     name: 'projects',
     data: () => data,
@@ -40,7 +48,7 @@ export default {
             $('.project').each(function() {
                 let project = $(this);
                 let height = project.height();
-                height = Math.floor(height + 0.999).toString() + 'px';
+                height = roundUp(height).toString() + 'px';
                 project.find('img').attr('height', height);
             });
         });
