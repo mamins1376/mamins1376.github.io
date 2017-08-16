@@ -19,7 +19,7 @@
                     <router-link to="/projects">Projects</router-link>
                 </div>
                 <div class="col-6 col-3-m">
-                    <router-link to="/technologies">Technologies</router-link>
+                    <router-link to="/abilities">Abilities</router-link>
                 </div>
                 <div class="col-6 col-3-m">
                     <router-link to="/contact">Contact</router-link>

@@ -5,7 +5,7 @@ import toTitleCase from 'title-case';
 import Home from '@/components/Home';
 import Blog from '@/components/Blog';
 import Projects from '@/components/Projects';
-import Technologies from '@/components/Technologies';
+import Abilities from '@/components/Abilities';
 import Contact from '@/components/Contact';
 
 Vue.use(Router);
@@ -24,7 +24,7 @@ export default new Router({
         generateSection(Home, '/'),
         generateSection(Blog),
         generateSection(Projects),
-        generateSection(Technologies),
+        generateSection(Abilities),
         generateSection(Contact)
     ]
 });

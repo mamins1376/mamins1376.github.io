@@ -1,9 +1,9 @@
 <template>
     <div id="techs" class="container">
         <global-navigation></global-navigation>
-        <h2>Technologies</h2>
+        <h2>Abilities</h2>
         <div class="row-m">
-            <div class="tech col-6-m" v-for="tech in technologies">
+            <div class="tech col-6-m" v-for="tech in abilities">
                 <h3>{{ tech.title }}</h3>
                 <ul>
                     <li v-for="tip in tech.tips">{{ tip }}</li>
@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import technologies from '@/data/technologies';
+import abilities from '@/data/abilities';
 
-const data = { technologies };
+const data = { abilities };
 
 export default {
-    name: 'technologies',
+    name: 'abilities',
     data: () => data
 };
 </script>
