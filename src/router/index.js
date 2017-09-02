@@ -20,6 +20,7 @@ function generateSection(component, path = null) {
 }
 
 export default new Router({
+    mode: 'history',
     routes: [
         generateSection(Home, '/'),
         generateSection(Blog),
