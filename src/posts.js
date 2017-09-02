@@ -11,8 +11,8 @@ function splitAt(string, index) {
 
 function extractMeta(content) {
     let meta = content.indexOf('</p>');
-    [meta, content] = splitAt(content, meta + 4);
-    meta = meta.slice(3, -4).split('@');
+    [meta, content] = splitAt(content, meta + 5);
+    meta = meta.slice(3, -5).split('@');
 
     let post = { content: content };
     for (let key in metaKeys) {
@@ -33,17 +33,16 @@ function makePost(name, content) {
     let post = extractMeta(content);
 
     post.date = moment(post.date || name.slice(0, 6), ['YYYY-MM-DD', 'YYMMDD']);
-    post.date = post.date.format('dddd, MMMM Do YYYY');
     post.slug = post.slug || name.slice(0, -3);
 
     return post;
 }
 
 function generatePosts(directory) {
-    let posts = [];
+    let posts = {};
     for (let file in directory) {
         let post = makePost(file, directory[file].src);
-        posts.push(post);
+        posts[post.slug] = post;
     }
     return posts;
 }
