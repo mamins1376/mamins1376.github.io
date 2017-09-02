@@ -1,0 +1,27 @@
+[
+    {
+        "title": "send me a message on Twitter",
+        "icon": "twitter",
+        "url": "https://twitter.com/mamins1376"
+    },
+    {
+        "title": "over Telegram",
+        "icon": "telegram",
+        "url": "https://telegram.me/mamins1376"
+    },
+    {
+        "title": "on Linkedin",
+        "icon": "linkedin",
+        "url": "https://linkedin.com/in/mohammad-amin-sameti-630904149"
+    },
+    {
+        "title": "take a look at my Github account",
+        "icon": "github-alt",
+        "url": "https://github.com/mamins1376"
+    },
+    {
+        "title": "or simply write me an email!",
+        "icon": "google",
+        "url": "mailto:mamins1376@gmail.com"
+    }
+]
