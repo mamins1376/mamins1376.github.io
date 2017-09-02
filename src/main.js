@@ -1,3 +1,6 @@
+// do redirections if any
+import '@/ghpages';
+
 import jQuery from 'jquery';
 import Vue from 'vue';
 import App from '@/App';

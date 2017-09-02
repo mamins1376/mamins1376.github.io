@@ -67,6 +67,17 @@ var webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
             chunksSortMode: 'dependency'
         }),
+        // a workaround for hosting SPAs over Github Pages. inspired by rafrex/spa-github-pages
+        new HtmlWebpackPlugin({
+            filename: '404.html',
+            template: '404.html',
+            inject: false,
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true,
+                removeAttributeQuotes: true
+            }
+        }),
     // split vendor js into its own file
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
