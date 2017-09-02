@@ -17,3 +17,5 @@ let app = new Vue({
 if (process.env.NODE_ENV === 'development') {
     window.app = app;
 }
+
+export default app;
