@@ -1749,9 +1749,9 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
-dir-loader@^0.3.0:
+dir-loader-es6@^0.3.0:
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/dir-loader/-/dir-loader-0.3.0.tgz#715b4a129a34e8e371c533625f3d7dc8428f2abe"
+  resolved "https://registry.yarnpkg.com/dir-loader-es6/-/dir-loader-es6-0.3.0.tgz#4cd111363b36599855f14e619e0ecac0222cf6a0"
   dependencies:
     loader-utils "^0.2.9"
     object-assign "^4.0.1"
