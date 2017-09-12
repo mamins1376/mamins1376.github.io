@@ -17,10 +17,20 @@
         ]
     },
     {
+        "title": "Front-end Development",
+        "tips": [
+            "Fluent in HTML5 concepts, standards and APIs",
+            "Experianced with CSS3, Grid systems and Flux design",
+            "Experianced with Bootstrap, Materialize and Foundation CSS Frameworks",
+            "Familiar with Typescript"
+        ]
+    },
+    {
         "title": "Javascript",
         "tips": [
             "Fluent in ES6 standard and related APIs",
             "Skilled at web application development and client-side rendering",
+            "Familiar with Webpack, Gulp and javascript build automation systems",
             "Highly experianced with VueJS library and modern web component development",
             "Experianced in server-side environments (like NodeJS)",
             "Familiar with jQuery and jQuery plugin development"

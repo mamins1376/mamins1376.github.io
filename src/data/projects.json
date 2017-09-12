@@ -1,19 +1,19 @@
 [
     {
-        "name": "First Project",
-        "url": "http://example.com",
-        "image": "first.png",
-        "content": "This was my first project."
-    },
-    {
-        "name": "Second Project",
-        "url": "http://example.com",
-        "content": "This was my second project."
+        "name": "My Blog (Geeky Life)",
+        "url": "http://mamins1376.github.io/weblog",
+        "repo": "https://github.com/mamins1376/weblog",
+        "content": "A Pelican-powered static blog, on my thoughts and experiances and events sometimes. Theme is designed and written by myself in pure CSS3 without use of any third-party frameworks."
     },
     {
         "name": "My Personal Website",
         "url": "https://mamins1376.github.io",
         "repo": "https://github.com/mamins1376/mamins1376.github.io",
         "content": "I share my knowledge here with people through a clean, simple design using VueJS, Webpack and CSS Animations. Go check the source code!"
+    },
+    {
+        "name": "Subscene API",
+        "repo": "https://github.com/mamins1376/Subscene-API",
+        "content": "A http wrapper for subscene.com in pure Python 3"
     }
 ]
