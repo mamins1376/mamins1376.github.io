@@ -1,8 +1,8 @@
 [
     {
         "name": "My Blog (Geeky Life)",
-        "url": "http://mamins1376.github.io/weblog",
-        "repo": "https://github.com/mamins1376/weblog",
+        "url": "http://mamins1376.github.io/blog",
+        "repo": "https://github.com/mamins1376/blog",
         "content": "A Pelican-powered static blog, on my thoughts and experiances and events sometimes. Theme is designed and written by myself in pure CSS3 without use of any third-party frameworks."
     },
     {
